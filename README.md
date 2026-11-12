@@ -50,4 +50,5 @@ Penjelasan singkat:
   <img src="screenshot/Modul 3.gif" width="300" alt="Demonstrasi Modul 3" />
 </p>
 
-> *File rekaman video original: [Modul 3.mp4](screenshot/Modul%203.mp4)*
+
+
