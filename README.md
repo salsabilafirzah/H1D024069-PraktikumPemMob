@@ -46,10 +46,8 @@ Penjelasan singkat:
 
 ### Hasil Demonstrasi (Screen Recording)
 
-https://github.com/user-attachments/assets/screenshot/Modul%203.mp4 (atau dapat dilihat langsung melalui file video di bawah):
+<p align="center">
+  <img src="screenshot/Modul 3.gif" width="300" alt="Demonstrasi Modul 3" />
+</p>
 
-<video src="screenshot/Modul%203.mp4" controls="controls" width="350">
-  Browser Anda tidak mendukung tag video. Anda dapat mengunduh atau memutar langsung file <a href="screenshot/Modul%203.mp4">screenshot/Modul 3.mp4</a>.
-</video>
-
-> *Catatan: Jika pemutar video di atas tidak langsung tampil di aplikasi Markdown viewer tertentu, silakan buka langsung file video di [screenshot/Modul 3.mp4](screenshot/Modul%203.mp4).*
+> *File rekaman video original: [Modul 3.mp4](screenshot/Modul%203.mp4)*
