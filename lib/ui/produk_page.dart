@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../model/produk.dart';
+import 'login_page.dart';
 import 'produk_detail.dart';
 import 'produk_form.dart';
 
@@ -37,7 +38,13 @@ class _ProdukPageState extends State<ProdukPage> {
             ListTile(
               title: const Text('Logout'),
               trailing: const Icon(Icons.logout),
-              onTap: () async {},
+              onTap: () async {
+                Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (context) => const LoginPage()),
+                  (route) => false,
+                );
+              },
             )
           ],
         ),

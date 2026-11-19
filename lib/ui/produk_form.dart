@@ -13,8 +13,8 @@ class ProdukForm extends StatefulWidget {
 class _ProdukFormState extends State<ProdukForm> {
   final _formKey = GlobalKey<FormState>();
   bool _isLoading = false;
-  String judul = "TAMBAH PRODUK";
-  String tombolSubmit = "SIMPAN";
+  String judul = "Tambah Produk";
+  String tombolSubmit = "Simpan";
 
   final _kodeProdukTextboxController = TextEditingController();
   final _namaProdukTextboxController = TextEditingController();
@@ -29,7 +29,7 @@ class _ProdukFormState extends State<ProdukForm> {
   isUpdate() {
     if (widget.produk != null) {
       setState(() {
-        judul = "UBAH PRODUK";
+        judul = "Ubah Produk";
         tombolSubmit = "UBAH";
         _kodeProdukTextboxController.text = widget.produk!.kodeProduk!;
         _namaProdukTextboxController.text = widget.produk!.namaProduk!;
@@ -37,8 +37,8 @@ class _ProdukFormState extends State<ProdukForm> {
             widget.produk!.hargaProduk.toString();
       });
     } else {
-      judul = "TAMBAH PRODUK";
-      tombolSubmit = "SIMPAN";
+      judul = "Tambah Produk";
+      tombolSubmit = "Simpan";
     }
   }
 
@@ -56,6 +56,7 @@ class _ProdukFormState extends State<ProdukForm> {
                 _kodeProdukTextField(),
                 _namaProdukTextField(),
                 _hargaProdukTextField(),
+                const SizedBox(height: 10),
                 _buttonSubmit(),
               ],
             ),
@@ -116,6 +117,19 @@ class _ProdukFormState extends State<ProdukForm> {
       child: Text(tombolSubmit),
       onPressed: () {
         var validate = _formKey.currentState!.validate();
+        if (validate) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                widget.produk != null
+                    ? "Berhasil mengubah produk!"
+                    : "Berhasil menyimpan produk!",
+              ),
+              backgroundColor: Colors.green,
+            ),
+          );
+          Navigator.pop(context);
+        }
       },
     );
   }
