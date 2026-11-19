@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'produk_page.dart';
 import 'registrasi_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -30,6 +31,7 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 _emailTextField(),
                 _passwordTextField(),
+                const SizedBox(height: 15),
                 _buttonLogin(),
                 const SizedBox(
                   height: 30,
@@ -67,7 +69,6 @@ class _LoginPageState extends State<LoginPage> {
       obscureText: true,
       controller: _passwordTextboxController,
       validator: (value) {
-        // jika karakter yang dimasukkan kurang dari 6 karakter
         if (value!.isEmpty) {
           return "Password harus diisi";
         }
@@ -82,6 +83,13 @@ class _LoginPageState extends State<LoginPage> {
       child: const Text("Login"),
       onPressed: () {
         var validate = _formKey.currentState!.validate();
+        if (validate) {
+          // Navigasi ke halaman List Produk
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const ProdukPage()),
+          );
+        }
       },
     );
   }
