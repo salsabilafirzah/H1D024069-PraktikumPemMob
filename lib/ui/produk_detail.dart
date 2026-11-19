@@ -21,6 +21,7 @@ class _ProdukDetailState extends State<ProdukDetail> {
       body: Center(
         child: Column(
           children: [
+            const SizedBox(height: 10),
             Text(
               "Kode : ${widget.produk!.kodeProduk}",
               style: const TextStyle(fontSize: 20.0),
@@ -33,6 +34,7 @@ class _ProdukDetailState extends State<ProdukDetail> {
               "Harga : Rp. ${widget.produk!.hargaProduk.toString()}",
               style: const TextStyle(fontSize: 18.0),
             ),
+            const SizedBox(height: 10),
             _tombolHapusEdit()
           ],
         ),
@@ -45,7 +47,11 @@ class _ProdukDetailState extends State<ProdukDetail> {
       mainAxisSize: MainAxisSize.min,
       children: [
         // Tombol Edit
-        OutlinedButton(
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.green,
+            foregroundColor: Colors.white,
+          ),
           child: const Text("EDIT"),
           onPressed: () {
             Navigator.push(
@@ -58,8 +64,13 @@ class _ProdukDetailState extends State<ProdukDetail> {
             );
           },
         ),
+        const SizedBox(width: 10),
         // Tombol Hapus
-        OutlinedButton(
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.red,
+            foregroundColor: Colors.white,
+          ),
           child: const Text("DELETE"),
           onPressed: () => confirmHapus(),
         ),
