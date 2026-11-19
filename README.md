@@ -71,10 +71,10 @@ Pada modul ini dibangun arsitektur RESTful API menggunakan framework **CodeIgnit
 
 | Registrasi Page | Login Page | List Produk |
 | :---: | :---: | :---: |
-| <img src="" width="250" alt="Registrasi Page" /> | <img src="" width="250" alt="Login Page" /> | <img src="" width="250" alt="List Produk" /> |
+| <img src="screenshot/RegistrasiPage.jpg" width="250" alt="Registrasi Page" /> | <img src="screenshot/LoginPage.jpg" width="250" alt="Login Page" /> | <img src="screenshot/ListProduk.jpg" width="250" alt="List Produk" /> |
 
 <br>
 
 | Tambah Produk | Detail Produk | Ubah Produk |
 | :---: | :---: | :---: |
-| <img src="" width="250" alt="Tambah Produk" /> | <img src="" width="250" alt="Detail Produk" /> | <img src="" width="250" alt="Ubah Produk" /> |
+| <img src="screenshot/TambahProduk.jpg" width="250" alt="Tambah Produk" /> | <img src="screenshot/DetailProdukModul4.jpg" width="250" alt="Detail Produk" /> | <img src="screenshot/UbahProduk.jpg" width="250" alt="Ubah Produk" /> |
