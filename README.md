@@ -50,5 +50,31 @@ Penjelasan singkat:
   <img src="screenshot/Modul 3.gif" width="300" alt="Demonstrasi Modul 3" />
 </p>
 
+> *File rekaman video original: [Modul 3.mp4](screenshot/Modul%203.mp4)*
 
+---
 
+## Modul 4: Operasi CRUD dengan API CodeIgniter 4 & Desain UI Tokokita
+
+Penjelasan materi:
+Pada modul ini dibangun arsitektur RESTful API menggunakan framework **CodeIgniter 4** dengan database **MySQL (Laragon)**, serta pembuatan model dan antarmuka pengguna (UI) pada **Flutter (Tokokita)**:
+1. **Backend RESTful API (CodeIgniter 4)**:
+   - Endpoint `/registrasi` (POST) untuk pendaftaran user/member baru dengan enkripsi password `PASSWORD_DEFAULT`.
+   - Endpoint `/login` (POST) untuk autentikasi user dan pembuatan access token (`auth_key`).
+   - Endpoint `/produk` (CRUD: POST, GET, PUT, DELETE) untuk manajemen data katalog produk.
+2. **Frontend Flutter (Tokokita)**:
+   - **Model Data**: Pemodelan data `Login`, `Registrasi`, dan `Produk` dengan parsing `fromJson`.
+   - **Form Registrasi & Login (`registrasi_page.dart` & `login_page.dart`)**: Dilengkapi validasi form (`TextFormField`, regex format email, minimal karakter password).
+   - **CRUD UI Produk**: `ProdukPage` (katalog produk berbentuk list card dan tombol tambah), `ProdukForm` (form tambah & ubah produk), dan `ProdukDetail` (tampil detail, dialog konfirmasi hapus, dan navigasi edit).
+
+### Hasil Dokumentasi & Screenshot Modul 4
+
+| Registrasi Page | Login Page | List Produk |
+| :---: | :---: | :---: |
+| <img src="" width="250" alt="Registrasi Page" /> | <img src="" width="250" alt="Login Page" /> | <img src="" width="250" alt="List Produk" /> |
+
+<br>
+
+| Tambah Produk | Detail Produk | Ubah Produk |
+| :---: | :---: | :---: |
+| <img src="" width="250" alt="Tambah Produk" /> | <img src="" width="250" alt="Detail Produk" /> | <img src="" width="250" alt="Ubah Produk" /> |

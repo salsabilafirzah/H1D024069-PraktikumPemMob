@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
+import 'ui/produk_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Menu',
-      theme: ThemeData(
-        useMaterial3: false,
-        primarySwatch: Colors.blue,
-      ),
-      home: const LoginPage(),
+    return const MaterialApp(
+      title: 'Toko Kita',
+      debugShowCheckedModeBanner: false,
+      home: ProdukPage(),
     );
   }
 }
